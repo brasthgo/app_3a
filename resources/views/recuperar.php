@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Recuperação de Senha</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
             height: 100vh;
             background-color: #f4f4f4;
         }
-        .register-container {
+        .recovery-container {
             background: white;
             padding: 20px;
             border-radius: 8px;
@@ -31,52 +31,49 @@
         button {
             width: 70%;
             padding: 10px;
-            background: #28a745;
-            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 10px;
         }
-        button:hover {
-            background: #218838;
+        .send-button {
+            background:rgb(190, 207, 38);
+            color: white;
+        }
+        .send-button:hover {
+            background:rgb(210, 223, 37);
         }
         .back-button {
-            background: #007BFF;
+            background:rgb(231, 25, 10);
+            color: white;
         }
         .back-button:hover {
-            background: #0056b3;
+            background:rgb(192, 16, 3);
         }
     </style>
 </head>
 <body>
-    <div class="register-container">
-        <h2>Cadastro</h2>
-        <input type="text" id="name" placeholder="Nome" required>
+    <div class="recovery-container">
+        <h2>Recuperação de Senha</h2>
+        <p>Digite seu e-mail para receber as instruções de redefinição de senha.</p>
         <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="cpf" placeholder="CPF" required>
-        <input type="text" id="phone" placeholder="Telefone" required>
-        <input type="password" id="password" placeholder="Senha" required>
-        <button onclick="register()">Cadastrar</button>
-        <button class="back-button" onclick="goToHome()">Voltar para Home</button>
+        <button class="send-button" onclick="sendRecovery()">Enviar</button>
+        <button class="back-button" onclick="goToLogin()">Voltar para Login</button>
     </div>
     <script>
-        function register() {
-            const name = document.getElementById("name").value;
+        function sendRecovery() {
             const email = document.getElementById("email").value;
-            const cpf = document.getElementById("cpf").value;
-            const phone = document.getElementById("phone").value;
-            const password = document.getElementById("password").value;
             
-            if (name === "" || email === "" || cpf === "" || phone === "" || password === "") {
-                alert("Por favor, preencha todos os campos.");
+            if (email === "") {
+                alert("Por favor, preencha o campo de e-mail.");
                 return;
             }
             
-            alert("Cadastro realizado com sucesso! (Simulação)");
+            alert("E-mail de recuperação enviado! (Simulação)");
+            window.location.href = "/";
         }
         
-        function goToHome() {
+        function goToLogin() {
             window.location.href = "/";
         }
     </script>
