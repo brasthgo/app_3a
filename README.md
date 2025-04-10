@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://laravel.com" target="_blank">
-    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
+    <img src="https://sdmntpreastus2.oaiusercontent.com/files/00000000-4b6c-61f6-af64-d4eb47f6286e/raw?se=2025-04-10T14%3A36%3A01Z&sp=r&sv=2024-08-04&sr=b&scid=341abdaa-3db3-5715-a755-e72ddfa40e0e&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-10T12%3A42%3A12Z&ske=2025-04-11T12%3A42%3A12Z&sks=b&skv=2024-08-04&sig=2i9vgAtPnNUbGftP5IGOHPPaOjYzHr5hRJUPUFN4c1I%3D" width="400" alt="Laravel Logo">
   </a>
 </p>
 
@@ -52,10 +52,10 @@ Durante o desenvolvimento deste projeto, a equipe aprendeu:
 
 ## 👥 Autores
 
-- [@DavideSouza]
-- [@ThiagoBerson]
-- [@ThiagoMendonça]
-- [@VictorAlexandre]
+- @DavideSouza
+- @ThiagoBerson
+- @ThiagoMendonça
+- @VictorAlexandre
 
 ## 🤝 Contribuindo
 
